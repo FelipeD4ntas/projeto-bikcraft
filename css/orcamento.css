@@ -1,0 +1,168 @@
+    @charset "UTF-8";
+
+    /* TITULO SOBRE OS INPUT */
+    .container-escolhas {
+        display: flex;
+    }
+    
+    .titulo-orc {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    
+    .titulo-orc::before {
+        content: '';
+        display: inline-block;
+        height: 9px;
+        width: 4px;
+        background: var(--cor04);
+        position: absolute;
+        left: -10px;
+        bottom: 26px;
+    }
+
+    .titulo-orc.dados-pessoais::before {
+        left: -10px;
+        bottom: 20px;
+    }
+    
+    /* BOX-PRETO LADO ESQUERDO */
+    .box-preto {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box-preto input {
+        display: none;
+    }
+    
+    .box-preto label {
+        display: inline-block;
+        border-radius: 5px;
+        background: var(--cor12);
+        color: var(--cor13);
+        padding: 15px 13px;
+        cursor: pointer;
+    }
+
+    .box-preto label:hover {
+        background: var(--cor11);
+    }
+    
+    .label-seguro {
+        margin-top: 20px;
+    }
+    
+    .box-preto input:checked+label {
+        outline: none;
+        background: var(--cor02);
+        color: var(--cor01);
+        box-shadow: 0px 0px 0px 2px rgb(255, 238, 171);
+        border: 1.4px solid var(--cor04);
+    }
+    
+    .box-preto label::before {
+        content: '';
+        display: inline-block;
+        margin-right: 8px;
+        width: 12px;
+        height: 12px;
+        border: 1px solid var(--cor13);
+        border-radius: 50%;
+    }
+    
+    .box-preto input:checked+label::before {
+        border-color: var(--cor01);
+        box-shadow: inset 0 0 0 3px var(--cor02), inset 0 0 0 7px var(--cor12);
+    }
+    
+    .box-preto #escolha-bikecraft:checked~.orcamento-bikecraft,
+    .box-preto #escolha-seguro:checked~.orcamento-seguro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* CARD CONFIG BIKES */
+    
+    .orcamento-seguro,
+    .orcamento-bikecraft {
+        display: none;
+        margin-top: 20px
+    }
+    
+    .orcamento-seguro label span,
+    .orcamento-bikecraft label span {
+        float: right;
+        display: none;
+    }
+    
+    .box-preto #prata:checked+label span,
+    .box-preto #ouro:checked+label span,
+    .box-preto #nimbus:checked+label span,
+    .box-preto #magic:checked+label span,
+    .box-preto #nebula:checked+label span {
+        display: inline-block;
+    }
+
+    .box-preto #nimbus:checked ~ .config-bikecraft,
+    .box-preto #magic:checked ~ .config-bikecraft,
+    .box-preto #nebula:checked ~ .config-bikecraft {
+        display: flex;
+    }
+    
+    .config-bikecraft {
+        display: none;
+        padding: 20px;
+        background: var(--cor02);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .config-bikecraft ul {
+        flex: 1 1 47%;
+    }
+    
+    .config-bikecraft ul li {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    
+    .config-bikecraft ul li p {
+        color: var(--cor06);
+    }
+    
+    .config-bikecraft ul li img {
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+    }
+    
+    .img-bikecraft {
+        flex: 1 1 53%;
+        padding-left: 10px;
+    }
+ 
+    .img-bikecraft img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* CARD SEGUROS */
+    
+    .orcamento-seguro .label-ouro {
+        margin-top: 20px;
+    }
+
+     /* BOX-BRANCO LADO DIREITO */
+    .titulo-orc.dados-pessoais:nth-of-type(n + 2) {
+        margin-top: 20px;
+    }
+
+    .box-botao.form-orcamento {
+        max-width: 260px;
+    }
+   
+    

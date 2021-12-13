@@ -1,0 +1,545 @@
+@charset "UTF-8";
+@media (max-width: 1239px) {
+    /* PARCEIROS */
+    .item-parceiro {
+        flex: 1 1 250px;
+    }
+}
+
+@media  (max-width: 1200px) {
+    /* PÁG CONTATOS */
+    .box-branco, .box-preto {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 998px) {
+    /* PARCEIROS */
+    .item-parceiro {
+        flex: 1 1 200px;
+    }
+    /* FICHA TECNICA BIKE */
+    .titulo-relevante.pedale-mais {
+        font-size: 4.8rem;
+    }
+}
+
+@media (max-width: 830px) {
+    /* PÁG CONTATO MAPAS LOJAS */
+    .desc-mapa h2 {
+        font-size: 2.4rem;
+    }
+    .rj-contato,
+    .sp-contato {
+        flex-direction: column;
+    }
+    .rj-endereco,
+    .sp-endereco {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    /* HEADER */
+    .list-menu li {
+        padding-left: 20px;
+    }
+    .list-menu a {
+        padding: 15px;
+        background: var(--cor07);
+        border-radius: 5px;
+    }
+    .list-menu a::after {
+        display: none;
+    }
+    /* INTRODUÇÃO */
+    .introducao {
+        background: var(--cor01);
+        box-shadow: inset 0 0, inset 0 -60px var(--cor02);
+    }
+    .intro-item {
+        flex: 1 1 100%;
+    }
+    .img-intro {
+        max-height: 300px;
+        min-height: 300px;
+        width: 100%;
+    }
+    .intro-artigo {
+        padding-bottom: 20px;
+    }
+    .titulo-relevante {
+        font-size: 3.3rem;
+        padding: 30px 0 10px 0;
+    }
+    .ponto::after {
+        width: 5px;
+        height: 5px;
+        margin-left: 3px;
+    }
+    .desc-artigo {
+        font-size: 1.8rem;
+    }
+    /* ESCOLHA */
+    .escolha {
+        margin: 60px 0;
+    }
+    .item-escolha {
+        margin-right: 20px;
+    }
+    .titulo-preto {
+        font-size: 3.2rem;
+        margin: 0 20px 40px 20px;
+    }
+    .titulo-link {
+        font-size: 2.4rem;
+    }
+    .titulo-link::before {
+        height: 8px;
+    }
+    /* TECNOLOGIA */
+    .tecnologia {
+        box-shadow: none;
+    }
+    .box-tecnologia {
+        margin: 0 20px;
+        padding: 60px 0;
+    }
+    .box-tec-img {
+        display: none;
+    }
+    .subtitulo {
+        font-size: 1.8rem;
+    }
+    .titulo-branco {
+        font-size: 3.2rem;
+    }
+    .link-tec {
+        font-size: 2.4rem;
+    }
+    .box-tec-vantagem {
+        padding-top: 40px;
+    }
+    .tec-vantagem p {
+        font-size: 1.5rem;
+    }
+    /* PARCEIROS */
+    .item-parceiro {
+        flex: 1 1 267px;
+    }
+    .item-parceiro:nth-of-type(2n+1) {
+        border-bottom: 2px solid #b2b2b25d;
+    }
+    .item-parceiro:nth-of-type(2n+2) {
+        border-right: none;
+        border-bottom: 2px solid #b2b2b25d;
+    }
+    .item-parceiro:nth-of-type(n+7) {
+        border-bottom: none;
+    }
+    /* SEGUROS */
+    .item-seguro {
+        flex: 1 1 100%;
+        margin: 20px 0;
+    }
+    .item-seguro:first-child {
+        margin-right: 0;
+    }
+    .item-seguro.ouro {
+        order: -1;
+    }
+    .titulo-seguro h2,
+    .titulo-seguro p {
+        font-size: 2.4rem;
+    }
+    /* CLIENTES */
+    .item-cliente {
+        flex: 1 1 100%;
+        max-height: 285px;
+    }
+    .item-cliente.img-depoimento {
+        max-height: 200px;
+    }
+    .depoimento {
+        align-items: center;
+        padding: 40px 20px;
+    }
+    .depoimento p {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .depoimento p::before {
+        left: -35px;
+    }
+    .depoimento p::after {
+        bottom: 20px;
+    }
+    /* RODAPE */
+    .item-rodape.logo-rodape {
+        display: none;
+    }
+    /* PÁGINA DAS BIKES */
+    .box-bikes {
+        padding: 40px calc((100% - 1200px) / 2);
+    }
+    .box-bikes:nth-child(2n+3) {
+        background: var(--cor07);
+    }
+    .bike-container {
+        flex-wrap: wrap;
+    }
+    .bike-img {
+        flex: 1 1 100%;
+    }
+    .box-desc-bike {
+        flex: 1 1 100%;
+        padding-top: 20px;
+    }
+    .desc-bike h2 {
+        font-size: 2.4rem;
+    }
+    /* FICHA TECNICA BIKE */
+    .info-bike {
+        flex-wrap: wrap;
+    }
+    .box-infos-bike {
+        order: -1;
+    }
+    .bike-solo.g {
+        padding-top: 20px;
+    }
+    /* ARTIGO SAIBA MAIS */
+    .box-artigo-mais {
+        flex-wrap: wrap;
+        box-shadow: inset 0 0 var(--cor02), inset 0 -80px var(--cor01);
+    }
+    .titulo-relevante.pedale-mais {
+        font-size: 3.2rem;
+        padding-bottom: 20px;
+    }
+    .img-artigo-mais {
+        flex: 1 1 100%;
+    }
+    .artigo-mais {
+        order: -1;
+        padding: 40px 20px;
+        flex: 1 1 100%;
+    }
+    /* PÁG CONTATO */
+    .box-contato-orcamento {
+        flex-direction: column;
+    }
+    .box-preto {
+        width: 100%;
+        background: var(--cor01);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
+        border-radius: 5px 5px 0 0;
+        padding: 20px;
+    }
+    .box-branco {
+        width: 100%;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
+        border-radius: 0 0 5px 5px;
+        padding: 20px;
+    }
+     /* PÁG SEGUROS TOPO */
+     .subtitulo {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 533px) {
+    /* HEADER */
+    .img-menu {
+        padding: 0px 15px 15px 0px;
+    }
+    .list-menu a {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    /* INTRODUÇÃO */
+    .box-botao {
+        max-width: max-content;
+    }
+    .box-botao.prata,
+    .box-botao.ouro {
+        max-width: 152px;
+    }
+    .botao {
+        padding: 15px;
+        font-size: 1.6rem;
+    }
+    /* ESCOLHA */
+    .item-escolha {
+        margin-right: 10px;
+    }
+    /* TECNOLOGIA */
+    .box-tec-vantagem {
+        flex-wrap: wrap;
+    }
+    /* PARCEIROS */
+    .item-parceiro {
+        flex: 1 1 178px;
+    }
+    /* CLIENTES */
+    .depoimento p::before {
+        display: none;
+    }
+    .depoimento p::after {
+        display: none;
+    }
+    /* PÁGINA DAS BIKES */
+    .topo {
+        background: transparent;
+    }
+    .box-bikes {
+        padding: 20px calc((100% - 1200px) / 2);
+    }
+    .config-bike {
+        flex-wrap: wrap;
+    }
+    .config-bike ul {
+        flex: 1 1 100%;
+        padding: 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .config-bike ul li {
+        flex: 1 1 50%;
+    }
+    .container-botao {
+        flex: 1 1 100%;
+        padding: 10px 20px;
+        justify-content: flex-start;
+    }
+    /* FICHA TECNICA BIKE */
+    .subtitulo.bike-solo {
+        font-size: 2.5rem;
+    }
+    .entrega,
+    .estoque {
+        padding: 2px 5px;
+        left: 185px;
+    }
+    .bike-solo.dupla {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bike-solo.p {
+        flex: 1 1 100%;
+        height: auto;
+    }
+    .bike-solo.p:first-child {
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    /* PÁG CONTATO */
+    .box-branco {
+        background: var(--cor02);
+    }
+    .item-form.label-dupla {
+        flex-direction: column;
+    }
+    .label-direita {
+        padding-left: 0;
+        width: 100%;
+    }
+    .label-esquerda {
+        padding-right: 0;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    /* PÁG CONTATO MAPAS LOJAS */
+    .box-lojas-locais {
+        flex-direction: column;
+    }
+    .mapa.rj {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .mapa.sp {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 450px){
+    /* PÁG ORÇAMENTO */
+    .config-bikecraft {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .config-bikecraft ul {
+        flex: 1 1 100%;
+    }
+
+    .img-bikecraft {
+        flex: 1 1 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    /* MENU MOBILE */
+    .box-menu {
+        align-items: flex-start;
+    }
+
+    .list-menu {
+        display: none;
+    }
+
+    .barra-um, 
+    .barra-dois, 
+    .barra-tres {
+        background-color: white;
+        height: 5px;
+        width: 100%;
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+
+    #menu:checked ~ .barra-um {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    #menu:checked ~ .barra-dois {
+        opacity: 0;
+    }
+
+    #menu:checked ~ .barra-tres {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    #menu:checked ~ .list-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 100px;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0%;
+        background: var(--cor01);
+        z-index: 10;
+    }
+
+    #menu:checked ~ .list-menu li {
+       padding: 20px;
+    }
+
+    #menu:checked ~ .list-menu li a {
+        font-size: 2.5rem;
+        padding: 20px;
+     }
+
+    .menu-mobile {
+        width: 40px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .box-entrega {
+        padding-bottom: 50px;
+    }
+    .entrega {
+        top: 56px;
+        left: 0;
+    }
+    .estoque {
+        bottom: -7px;
+        left: 0;
+    }
+    .tec-vantagem.bike-solo {
+        padding-top: 20px;
+        flex: 1 1 100%;
+    }
+    .tec-vantagem.bike-solo:first-child {
+        padding-top: 0px;
+    }
+    .tec-vantagem.bike-solo:nth-child(2n + 1) {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 355px) {
+    /* PARCEIROS */
+    .item-parceiro {
+        flex: 1 1 150px;
+    }
+    /* PÁGINA DAS BIKES */
+    .box-topo {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .topo span {
+        font-size: 1.6rem;
+    }
+    .config-bike ul li {
+        flex: 1 1 100%;
+    }
+    /* PÁG CONTATO */
+    .box-botao.form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 329px) {
+    /* PÁG ORÇAMENTO */
+    .orcamento-bikecraft label span {
+        float: none;
+        display: none;
+        padding-left: 22px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 315px) {
+    /* HEADER */
+    .box-menu {
+        justify-content: center;
+    }
+    .list-menu li {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+    .list-menu li a {
+        width: 100%;
+    }
+    /* TECNOLOGIA */
+    .link-tec {
+        font-size: 2.1rem;
+    }
+    /* PARCEIROS */
+    .item-parceiro {
+        flex: 1 1 160px;
+    }
+    .item-parceiro:last-child {
+        border-top: 2px solid #b2b2b25d;
+    }
+    /* SEGUROS */
+    .titulo-seguro p,
+    .titulo-seguro h2 {
+        font-size: 2.2rem;
+    }
+    .item-seguro {
+        padding-left: 32px;
+    }
+    /* PÁGINA DAS BIKES */
+    .topo span {
+        display: none;
+    }
+    .box-botao.prata,
+    .box-botao.ouro {
+        max-width: 176px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* CLIENTES */
+    .item-cliente {
+        max-height: 520px;
+    }
+}

@@ -1,0 +1,107 @@
+@charset"UTF-8";
+.subtitulo {
+    padding-bottom: 10px;
+}
+
+.seguros.pag-seguros {
+    padding-top: 0;
+}
+
+.box-vantagens {
+    margin: 0 20px;
+}
+
+.vantagens {
+    padding: 60px calc((100% - 1200px) / 2);
+    background: var(--cor01);
+}
+
+.box-tec-vantagem.seguro-vantagens {
+    padding-top: 0;
+    flex-wrap: wrap;
+}
+
+.tec-vantagem.tec-seguro {
+    flex: 1 1 300px;
+    margin-right: 0;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.tec-vantagem.tec-seguro img {
+    width: auto;
+}
+
+.tec-vantagem.tec-seguro h3 {
+    font-size: 2.4rem;
+}
+
+
+/* PERGUNTAS */
+
+.perguntas {
+    padding: 60px calc((100% - 1200px) / 2);
+    background: var(--cor02);
+}
+
+.box-perguntas {
+    margin: 0 20px;
+}
+
+.pergunta {
+    padding: 10px 40px;
+}
+
+.pergunta:nth-child(2n + 1) {
+    background: var(--cor13);
+}
+
+.titulo-link.link-pergunta {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--cor01);
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.titulo-link.link-pergunta::before {
+    position: absolute;
+    left: -20px;
+    top: 6px;
+}
+
+.titulo-link.link-pergunta:hover::before {
+    width: 12px;
+}
+
+.titulo-link.link-pergunta::after {
+    content: url('../img/icones/seta-abrir.svg');
+    position: absolute;
+    right: -20px;
+    top: -2px;
+    transition: 0.3s;
+}
+
+.titulo-link.link-pergunta:hover::after {
+    transform: rotate(180deg);
+}
+
+.desc-pergunta {
+    display: none;
+    font-size: 1.6rem;
+    font-weight: normal;
+    padding: 10px 0;
+    color: var(--cor06);
+    max-width: 75ch;
+}
+
+.check {
+    display: none;
+}
+
+.check:checked+.desc-pergunta {
+    display: block;
+}
